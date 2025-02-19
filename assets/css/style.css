@@ -1,0 +1,56 @@
+.negro {
+    color: black;
+}
+
+.rojo {
+    background-color: red!important;
+}
+
+.verde {
+    background-color: green!important;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.visor-left {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 40px;
+    height: 68px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.interior {
+    margin: auto;
+}
+
+.circle {
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.circle.d1 {
+    margin-bottom: 4px;
+}
+
+.fondo {
+    background-color: blue;
+    display: flex;
+}
+
+.competidores {
+    margin: auto;
+}
+
+.titulo {
+    font-weight: bold;
+    display: none;
+}
