@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Disparos</title>
+    <link rel="stylesheet" href="assets/css/comp-4.css">
+</head>
+
+<body>
+    <h1>Registro de Disparos</h1>
+
+    <!-- Formulario para elegir número de jugadores -->
+    <div id="setup">
+        <label for="numPlayers">Número de participantes (1-10):</label>
+        <input type="number" id="numPlayers" min="1" max="10">
+        <button onclick="startGame()">Iniciar</button>
+    </div>
+
+    <!-- Área del juego (se llena dinámicamente) -->
+    <div id="gameArea" style="display: none;">
+        <h2>Puntajes</h2>
+        <table id="scoreTable">
+            <thead>
+                <tr>
+                    <th>Jugador</th>
+                    <th>Puntaje</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="scoreBody"></tbody>
+        </table>
+
+        <h2>Registro de Disparos</h2>
+        <table id="shotsTable"></table>
+    </div>
+
+    <!-- Ranking -->
+
+    <h2>Ranking Final</h2>
+    <table id="rankingTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Posición</th>
+                <th>Jugador</th>
+                <th>Puntaje</th>
+            </tr>
+        </thead>
+        <tbody id="rankingBody"></tbody>
+    </table>
+    <button id="resetButton" onclick="resetGame()" style="display: none;">Reiniciar Juego</button>
+
+    <!-- Scripts -->
+    <script src="assets/js/comp-4.js"></script>
+</body>
+
+</html>
